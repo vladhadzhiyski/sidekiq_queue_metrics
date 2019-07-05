@@ -5,7 +5,7 @@ require_relative './lib/sidekiq_queue_metrics/version.rb'
 
 Gem::Specification.new do |s|
   s.name                        =   'sidekiq_queue_metrics'
-  s.version                     =   Sidekiq::QueueMetrics::VERSION
+  s.version                     =   CrntSidekiq::QueueMetrics::VERSION
   s.summary                     =   'Records stats of each sidekiq queue and exposes APIs to retrieve them'
   s.authors                     =   ['Ajit Singh']
   s.email                       =   'jeetsingh.ajit@gamil.com'
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files                  =   s.files.grep(%r{^(test|spec|features)/})
   s.require_paths               =   ["lib"]
 
-  s.add_dependency                  'sidekiq', '>= 5.1'
+  s.add_dependency                  'sidekiq', '>= 4.2'
   s.add_dependency                  'eldritch'
   s.add_development_dependency      "bundler", "~> 1.5"
   s.add_development_dependency      'rspec'
